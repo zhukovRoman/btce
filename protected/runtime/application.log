@@ -1,0 +1,181 @@
+2013/12/10 16:22:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /Applications/AMPPS/www/btce/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/AMPPS/www/btce/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#1 /Applications/AMPPS/www/btce/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/AMPPS/www/btce/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=gii
+---
+2013/12/11 09:54:44 [error] [exception.CException] exception 'CException' with message 'InfoController cannot find the requested view "create".' in /Applications/AMPPS/www/btce/yii/framework/web/CController.php:878
+Stack trace:
+#0 /Applications/AMPPS/www/btce/yii/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#1 /Applications/AMPPS/www/btce/protected/controllers/InfoController.php(79): CController->render('create', Array)
+#2 /Applications/AMPPS/www/btce/yii/framework/web/actions/CInlineAction.php(49): InfoController->actionCreate()
+#3 /Applications/AMPPS/www/btce/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Applications/AMPPS/www/btce/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /Applications/AMPPS/www/btce/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /Applications/AMPPS/www/btce/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /Applications/AMPPS/www/btce/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /Applications/AMPPS/www/btce/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /Applications/AMPPS/www/btce/yii/framework/web/CController.php(291): CFilterChain->run()
+#10 /Applications/AMPPS/www/btce/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Applications/AMPPS/www/btce/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#12 /Applications/AMPPS/www/btce/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('info/create')
+#13 /Applications/AMPPS/www/btce/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /Applications/AMPPS/www/btce/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php?r=info/create
+HTTP_REFERER=http://btce/index.php?r=site/login
+---
+2013/12/11 09:54:49 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Applications/AMPPS/www/btce/yii/framework/web/CController.php:336
+Stack trace:
+#0 /Applications/AMPPS/www/btce/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /Applications/AMPPS/www/btce/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /Applications/AMPPS/www/btce/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /Applications/AMPPS/www/btce/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /Applications/AMPPS/www/btce/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /Applications/AMPPS/www/btce/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /Applications/AMPPS/www/btce/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /Applications/AMPPS/www/btce/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Applications/AMPPS/www/btce/yii/framework/web/CWebApplication.php(282): CController->run('get')
+#9 /Applications/AMPPS/www/btce/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('info/get')
+#10 /Applications/AMPPS/www/btce/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /Applications/AMPPS/www/btce/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=info/get
+---
+2013/12/11 09:55:13 [error] [php] file_get_contents(0) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory (/Applications/AMPPS/www/btce/protected/controllers/InfoController.php:93)
+Stack trace:
+#0 /Applications/AMPPS/www/btce/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#1 /Applications/AMPPS/www/btce/yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 /Applications/AMPPS/www/btce/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /Applications/AMPPS/www/btce/yii/framework/web/filters/CFilterChain.php(133): InfoController->runAction()
+#4 /Applications/AMPPS/www/btce/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /Applications/AMPPS/www/btce/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#6 /Applications/AMPPS/www/btce/yii/framework/web/filters/CInlineFilter.php(58): InfoController->filterAccessControl()
+#7 /Applications/AMPPS/www/btce/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#8 /Applications/AMPPS/www/btce/yii/framework/web/CController.php(291): CFilterChain->run()
+#9 /Applications/AMPPS/www/btce/yii/framework/web/CController.php(265): InfoController->runActionWithFilters()
+#10 /Applications/AMPPS/www/btce/yii/framework/web/CWebApplication.php(282): InfoController->run()
+#11 /Applications/AMPPS/www/btce/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /Applications/AMPPS/www/btce/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /Applications/AMPPS/www/btce/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=info/get&pair=btc_usd
+in /Applications/AMPPS/www/btce/protected/controllers/InfoController.php (93)
+in /Applications/AMPPS/www/btce/index.php (13)
+2013/12/11 12:00:36 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Applications/AMPPS/www/btce/yii/framework/web/CController.php:336
+Stack trace:
+#0 /Applications/AMPPS/www/btce/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /Applications/AMPPS/www/btce/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /Applications/AMPPS/www/btce/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /Applications/AMPPS/www/btce/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /Applications/AMPPS/www/btce/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /Applications/AMPPS/www/btce/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /Applications/AMPPS/www/btce/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /Applications/AMPPS/www/btce/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Applications/AMPPS/www/btce/yii/framework/web/CWebApplication.php(282): CController->run('get')
+#9 /Applications/AMPPS/www/btce/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('info/get')
+#10 /Applications/AMPPS/www/btce/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /Applications/AMPPS/www/btce/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=info/get
+---
+2013/12/11 12:17:44 [error] [php] file_get_contents(0) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory (/Applications/AMPPS/www/btce/protected/controllers/InfoController.php:92)
+Stack trace:
+#0 /Applications/AMPPS/www/btce/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /Applications/AMPPS/www/btce/yii/framework/web/filters/CFilterChain.php(133): InfoController->runAction()
+#2 /Applications/AMPPS/www/btce/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /Applications/AMPPS/www/btce/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#4 /Applications/AMPPS/www/btce/yii/framework/web/filters/CInlineFilter.php(58): InfoController->filterAccessControl()
+#5 /Applications/AMPPS/www/btce/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#6 /Applications/AMPPS/www/btce/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /Applications/AMPPS/www/btce/yii/framework/web/CController.php(265): InfoController->runActionWithFilters()
+#8 /Applications/AMPPS/www/btce/yii/framework/web/CWebApplication.php(282): InfoController->run()
+#9 /Applications/AMPPS/www/btce/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Applications/AMPPS/www/btce/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /Applications/AMPPS/www/btce/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=info/get
+in /Applications/AMPPS/www/btce/protected/controllers/InfoController.php (92)
+in /Applications/AMPPS/www/btce/index.php (13)
+2013/12/11 12:20:51 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Applications/AMPPS/www/btce/yii/framework/web/CController.php:336
+Stack trace:
+#0 /Applications/AMPPS/www/btce/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /Applications/AMPPS/www/btce/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /Applications/AMPPS/www/btce/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /Applications/AMPPS/www/btce/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /Applications/AMPPS/www/btce/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /Applications/AMPPS/www/btce/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /Applications/AMPPS/www/btce/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /Applications/AMPPS/www/btce/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Applications/AMPPS/www/btce/yii/framework/web/CWebApplication.php(282): CController->run('get')
+#9 /Applications/AMPPS/www/btce/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('info/get')
+#10 /Applications/AMPPS/www/btce/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /Applications/AMPPS/www/btce/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=info/get
+---
+2013/12/14 19:35:15 [error] [php] Creating default object from empty value (/Applications/AMPPS/www/btce/protected/commands/ParseCommand.php:18)
+Stack trace:
+#0 /Applications/AMPPS/www/btce/yii/framework/base/CApplication.php(180): CConsoleApplication->processRequest()
+#1 /Applications/AMPPS/www/btce/yii/framework/yiic.php(33): CConsoleApplication->run()
+#2 /Applications/AMPPS/www/btce/protected/cron.php(5): require_once()
+
+2013/12/14 19:39:04 [error] [php] Creating default object from empty value (/Applications/AMPPS/www/btce/protected/commands/ParseCommand.php:18)
+Stack trace:
+#0 /Applications/AMPPS/www/btce/yii/framework/base/CApplication.php(180): CConsoleApplication->processRequest()
+#1 /Applications/AMPPS/www/btce/yii/framework/yiic.php(33): CConsoleApplication->run()
+#2 /Applications/AMPPS/www/btce/protected/cron.php(6): require_once()
+
+2013/12/14 19:41:43 [error] [php] Creating default object from empty value (/Applications/AMPPS/www/btce/protected/commands/ParseCommand.php:18)
+Stack trace:
+#0 /Applications/AMPPS/www/btce/yii/framework/base/CApplication.php(180): CConsoleApplication->processRequest()
+#1 /Applications/AMPPS/www/btce/yii/framework/yiic.php(33): CConsoleApplication->run()
+#2 /Applications/AMPPS/www/btce/protected/cron.php(6): require_once()
+
+2013/12/14 19:42:53 [error] [php] Creating default object from empty value (/Applications/AMPPS/www/btce/protected/commands/ParseCommand.php:18)
+Stack trace:
+#0 /Applications/AMPPS/www/btce/yii/framework/base/CApplication.php(180): CConsoleApplication->processRequest()
+#1 /Applications/AMPPS/www/btce/yii/framework/yiic.php(33): CConsoleApplication->run()
+#2 /Applications/AMPPS/www/btce/protected/cron.php(6): require_once()
+
+2013/12/14 19:44:16 [error] [php] Creating default object from empty value (/Applications/AMPPS/www/btce/protected/commands/ParseCommand.php:18)
+Stack trace:
+#0 /Applications/AMPPS/www/btce/yii/framework/base/CApplication.php(180): CConsoleApplication->processRequest()
+#1 /Applications/AMPPS/www/btce/yii/framework/yiic.php(33): CConsoleApplication->run()
+#2 /Applications/AMPPS/www/btce/protected/cron.php(6): require_once()
+
+2013/12/14 19:48:59 [error] [php] Creating default object from empty value (/Applications/AMPPS/www/btce/protected/commands/ParseCommand.php:18)
+Stack trace:
+#0 /Applications/AMPPS/www/btce/yii/framework/base/CApplication.php(180): CConsoleApplication->processRequest()
+#1 /Applications/AMPPS/www/btce/yii/framework/yiic.php(34): CConsoleApplication->run()
+#2 /Applications/AMPPS/www/btce/protected/cron.php(6): require_once()
+
+2013/12/14 19:49:17 [error] [php] Creating default object from empty value (/Applications/AMPPS/www/btce/protected/commands/ParseCommand.php:18)
+Stack trace:
+#0 /Applications/AMPPS/www/btce/yii/framework/base/CApplication.php(180): CConsoleApplication->processRequest()
+#1 /Applications/AMPPS/www/btce/yii/framework/yiic.php(34): CConsoleApplication->run()
+#2 /Applications/AMPPS/www/btce/protected/cron.php(6): require_once()
+
+2013/12/14 19:49:30 [error] [php] Creating default object from empty value (/Applications/AMPPS/www/btce/protected/commands/ParseCommand.php:18)
+Stack trace:
+#0 /Applications/AMPPS/www/btce/yii/framework/base/CApplication.php(180): CConsoleApplication->processRequest()
+#1 /Applications/AMPPS/www/btce/yii/framework/yiic.php(34): CConsoleApplication->run()
+#2 /Applications/AMPPS/www/btce/protected/cron.php(6): require_once()
+
+2013/12/14 19:50:00 [error] [php] Creating default object from empty value (/Applications/AMPPS/www/btce/protected/commands/ParseCommand.php:18)
+Stack trace:
+#0 /Applications/AMPPS/www/btce/yii/framework/base/CApplication.php(180): CConsoleApplication->processRequest()
+#1 /Applications/AMPPS/www/btce/yii/framework/yiic.php(34): CConsoleApplication->run()
+#2 /Applications/AMPPS/www/btce/protected/cron.php(6): require_once()
+
+2013/12/14 19:50:30 [error] [php] Object of class CConsoleApplication could not be converted to string (/Applications/AMPPS/www/btce/yii/framework/yiic.php:25)
+Stack trace:
+#0 /Applications/AMPPS/www/btce/yii/framework/yiic.php(25): CConsoleApplication->handleError()
+#1 /Applications/AMPPS/www/btce/protected/cron.php(6): require_once()
+
+2013/12/14 19:53:38 [error] [php] Creating default object from empty value (/Applications/AMPPS/www/btce/protected/commands/ParseCommand.php:18)
+Stack trace:
+#0 /Applications/AMPPS/www/btce/yii/framework/base/CApplication.php(180): CConsoleApplication->processRequest()
+#1 /Applications/AMPPS/www/btce/yii/framework/yiic.php(33): CConsoleApplication->run()
+#2 /Applications/AMPPS/www/btce/protected/cron.php(7): require_once()
+
